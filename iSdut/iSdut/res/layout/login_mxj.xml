@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/spback1"
+    android:orientation="vertical" >
+
+    
+    
+    
+    <AutoCompleteTextView 
+        android:id="@+id/edt_mxj_name"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_above="@+id/edt_mxj_pwd_login"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/bg_edittext"
+        
+        android:hint="请输入学号"
+        android:singleLine="true"
+        android:textColorHint="#AAAAAA"
+        android:textColor="#000000"
+        android:textSize="15dip"/>
+    
+    <EditText
+        android:id="@+id/edt_mxj_pwd_login"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_above="@+id/edt_mxj_pwd_card"
+        android:layout_marginBottom="10dip"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:background="@drawable/bg_edittext"
+        android:hint="请输入登陆密码"
+        android:singleLine="true"
+        android:textColorHint="#AAAAAA"
+        android:textColor="#000000"
+        android:textSize="15dip" 
+        android:password="true"/>
+    
+    <EditText
+        android:id="@+id/edt_mxj_pwd_card"
+        android:layout_width="fill_parent"
+        android:layout_height="40dip"
+        android:layout_above="@+id/cb_auto"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/bg_edittext"
+        android:hint="请输入图书馆密码"
+        android:singleLine="true"
+        android:textColor="#000000"
+        android:textColorHint="#AAAAAA"
+        android:textSize="15dip" 
+        android:password="true"/>
+
+    <CheckBox
+        android:id="@+id/cb_auto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewline"
+        android:layout_marginLeft="36dip"
+        android:layout_marginRight="36dip"
+        android:layout_marginBottom="20dip"
+        android:text="@string/autologin"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/login_btnLogin"
+        android:layout_width="70dip"
+        android:layout_height="35dip"
+        android:layout_alignLeft="@+id/edt_mxj_pwd_card"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/bg_alibuybutton"
+        android:text="@string/login_btn_login"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <Button
+        android:id="@+id/login_btnReset"
+        android:layout_width="70dip"
+        android:layout_height="35dip"
+        android:layout_alignBaseline="@+id/login_btnLogin"
+        android:layout_alignBottom="@+id/login_btnLogin"
+        android:layout_alignRight="@+id/edt_mxj_pwd_card"
+        android:background="@drawable/bg_alibuybutton"
+        android:text="@string/login_btn_reset"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/viewline"
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_above="@+id/login_btnLogin"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="20dp"
+        android:background="#F5DEB3" />
+
+</RelativeLayout>

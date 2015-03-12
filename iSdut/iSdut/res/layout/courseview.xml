@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="35sp"
+        android:background="#00CC99"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/coursemenutitle"
+            style="@style/title"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="@string/mycourse" />
+       <ImageView
+             android:id="@+id/ivsourseviewback"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentLeft="true"
+             android:layout_centerVertical="true"
+             android:src="@drawable/back2" />
+    </RelativeLayout>
+
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/textView11"
+            style="@style/ctext2"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/monday"
+            style="@style/ctext3"
+            android:text="@string/monday" />
+
+        <TextView
+            android:id="@+id/tuesday"
+            style="@style/ctext3"
+            android:text="@string/tuesday" />
+
+        <TextView
+            android:id="@+id/wednesday"
+            style="@style/ctext3"
+            android:text="@string/wednesday" />
+
+        <TextView
+            android:id="@+id/thursday"
+            style="@style/ctext3"
+            android:text="@string/thursday" />
+
+        <TextView
+            android:id="@+id/friday"
+            style="@style/ctext3"
+            android:text="@string/friday" />
+
+        <TextView
+            android:id="@+id/saturday"
+            style="@style/ctext3"
+            android:text="@string/saturday" />
+
+        <TextView
+            android:id="@+id/sunday"
+            style="@style/ctext3"
+            android:text="@string/sunday" />
+    </TableRow>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent" >
+
+        <TableLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/class12"
+                    style="@style/ctext2"
+                    android:text="@string/class12" />
+
+                <TextView
+                    android:id="@+id/c112"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c212"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c312"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c412"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c512"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c612"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c712"
+                    style="@style/ctext1"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/calss34"
+                    style="@style/ctext2"
+                    android:text="@string/class34" />
+
+                <TextView
+                    android:id="@+id/c134"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c234"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c334"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c434"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c534"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c634"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c734"
+                    style="@style/ctext1"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/class56"
+                    style="@style/ctext2"
+                    android:text="@string/class56" />
+
+                <TextView
+                    android:id="@+id/c156"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c256"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c356"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c456"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c556"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c656"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c756"
+                    style="@style/ctext1"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/class78"
+                    style="@style/ctext2"
+                    android:text="@string/class78" />
+
+                <TextView
+                    android:id="@+id/c178"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c278"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c378"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c478"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c578"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c678"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c778"
+                    style="@style/ctext1"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/class90"
+                    style="@style/ctext2"
+                    android:text="@string/class90" />
+
+                <TextView
+                    android:id="@+id/c190"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c290"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c390"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c490"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c590"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c690"
+                    style="@style/ctext1"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/c790"
+                    style="@style/ctext1"
+                    android:text="" />
+            </TableRow>
+        </TableLayout>
+    </ScrollView>
+
+</LinearLayout>

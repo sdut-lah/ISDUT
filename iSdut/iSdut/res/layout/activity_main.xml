@@ -1,0 +1,166 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+<!--     菜单 -->
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/spback1"
+        android:orientation="vertical">
+
+        <LinearLayout
+        android:id="@+id/LL"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="vertical" >
+        	<WebView
+	            android:id="@+id/main_tvWether"
+	            android:background="@android:color/transparent" 
+	             android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layerType="software"  />
+	         
+	        <TextView 
+	            android:id="@+id/main_tvUName"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/main_tvuname"
+	            android:layout_marginTop="150dp"
+	            android:layout_marginLeft="170dp"
+	            android:visibility="invisible"/>
+	        <TextView 
+	            android:id="@+id/main_tvUId"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="@string/main_tvuid"
+	            android:layout_marginTop="10dp"
+	            android:layout_marginLeft="170dp"
+	            android:visibility="invisible"/>
+        </LinearLayout>
+         <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="0.3"
+	        android:orientation="vertical">
+	      
+	        <TextView 
+	            android:id="@+id/main_tvSets"
+	            android:layout_width="match_parent"
+	            android:layout_height="50dp"
+	            android:text="@string/main_tvsets"
+	            android:background="#FFFFFF"
+	            android:gravity="center_horizontal|center_vertical"
+	            android:visibility="gone"/>
+
+
+	        <TextView 
+	            android:id="@+id/main_tvAbountUs"
+	            android:layout_width="match_parent" 
+	            android:layout_height="0dp"
+	        	android:layout_weight="1"
+	            android:text="@string/main_tvaboutUs"
+	             android:background="@android:color/transparent" 
+	            android:layout_marginTop="1dp"
+	            android:gravity="center_horizontal|center_vertical"/>
+		        
+		        <Button 
+		            android:id="@+id/main_btChange"
+		            android:layout_height="0dp"
+		            android:layout_width="match_parent"
+		            android:layout_weight="1"
+		            android:text="@string/main_btchange"
+		            android:background="@drawable/bg_alibuybutton_default_c"/>
+		        <Button 
+		            android:id="@+id/main_btQuit"
+		            android:layout_height="0dp"
+		            android:layout_width="match_parent"
+		            android:layout_weight="1"
+		            android:text="@string/main_btquit"
+		            android:background="@drawable/bg_alibuybutton_default_q"/>
+        </LinearLayout>
+    </LinearLayout>
+<!--     主页 -->
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+	    android:orientation="vertical">
+	   <TextView
+	        android:id="@+id/menutitle"
+	        style="@style/title"
+	        android:text="@string/menutitle" />
+<!-- 	   <ScrollView
+	        android:id="@+id/scrollView1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent" > -->
+	        
+	       <ScrollView
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/scrollView"
+            android:scrollbarSize="0dp"
+            android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+ 			android:orientation="vertical"> 
+ 			
+            <TextView
+                android:id="@+id/Edu_admin_sys"
+                style="@style/s_title"
+                android:text="@string/Edu_admin_sys" />
+
+            <cn.sdut.util.MyGridView
+                android:id="@+id/gridviewEAS"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+            <TextView
+                android:id="@+id/library"
+                style="@style/s_title"
+                android:text="@string/library" />
+
+            <cn.sdut.util.MyGridView
+                android:id="@+id/gridviewlibrary"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+            <TextView
+                android:id="@+id/others"
+                style="@style/s_title"
+                android:text="@string/others" />
+
+            <cn.sdut.util.MyGridView
+                android:id="@+id/gridviewother"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="10dp" />
+           
+   </LinearLayout>
+      </ScrollView>
+
+ </LinearLayout>
+        
+
+</LinearLayout>
